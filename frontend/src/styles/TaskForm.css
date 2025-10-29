@@ -1,0 +1,65 @@
+/* TaskForm.css */
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.task-form .text-input {
+  flex: 1;
+  min-width: 160px;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: #fff;
+  outline: none;
+  transition: border 0.15s;
+}
+
+.task-form .text-input:focus {
+  border-color: #0070f3;
+}
+
+.priority-select {
+  min-width: 90px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.priority-select.low {
+  border-color: #9acd32;
+}
+
+.priority-select.medium {
+  border-color: #f0ad4e;
+}
+
+.priority-select.high {
+  border-color: #d9534f;
+}
+
+.btn-primary {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  line-height: 1.2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+  min-width: 70px;
+}
+
+.btn-primary:hover {
+  background: #0059c1;
+}

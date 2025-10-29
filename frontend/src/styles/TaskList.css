@@ -1,0 +1,61 @@
+.carousel-wrapper {
+  width: 100%;
+}
+
+
+.task-list {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 220px;
+    border-radius: 12px;
+    background: #ffffff;
+  }
+  
+  .task-track {
+    display: flex;
+    gap: 20px; /* gap between the two loops */
+    will-change: transform;
+    align-items: stretch;
+  }
+
+  /* each loop half handles its own internal spacing */
+  .task-track .loop {
+    display: flex;
+    gap: 20px;
+    flex: 0 0 auto;
+  }
+
+  /* Remove per-card margins inside animated track to avoid seam jumps */
+  .task-track .task-item {
+    margin: 0;
+    flex: 0 0 260px;
+  }
+
+  @media (max-width: 480px) {
+    .task-track .task-item {
+      flex: 0 0 260px;
+    }
+  }
+  
+
+  .carousel-wrapper ::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  @media (max-width: 480px) {
+    .task-list {
+      min-height: 200px;
+      border-radius: 10px;
+    }
+
+  }
+  
+  
+  .task-list.empty {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+  }
+  
